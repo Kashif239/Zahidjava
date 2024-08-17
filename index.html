@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 4</title>
+</head>
+<body>
+    <script>
+// Urdu Marks Validation
+var urdumarks = prompt("Enter your urdu Marks");
+urdumarks = Number(urdumarks);
+if (isNaN(urdumarks) || urdumarks < 0 || urdumarks > 100) {
+    alert("Enter valid number between 0 to 100");
+    urdumarks = prompt("Enter your urdu Marks");
+    urdumarks = Number(urdumarks);
+    if (isNaN(urdumarks) || urdumarks < 0 || urdumarks > 100) {
+        alert("Enter valid number between 0 to 100");
+        urdumarks = prompt("Enter your urdu Marks");
+        urdumarks = Number(urdumarks);
+        if (isNaN(urdumarks) || urdumarks < 0 || urdumarks > 100) {
+            alert("Enter valid number between 0 to 100");
+            urdumarks = prompt("Enter your urdu Marks");
+            urdumarks = Number(urdumarks);
+        }
+    }
+}
+
+// English Marks Validation
+var ENGLISHmarks = prompt("Enter your English Marks");
+ENGLISHmarks = Number(ENGLISHmarks);
+if (isNaN(ENGLISHmarks) || ENGLISHmarks < 0 || ENGLISHmarks > 100) {
+    alert("Enter valid number between 0 to 100");
+    ENGLISHmarks = prompt("Enter your English Marks");
+    ENGLISHmarks = Number(ENGLISHmarks);
+    if (isNaN(ENGLISHmarks) || ENGLISHmarks < 0 || ENGLISHmarks > 100) {
+        alert("Enter valid number between 0 to 100");
+        ENGLISHmarks = prompt("Enter your English Marks");
+        ENGLISHmarks = Number(ENGLISHmarks);
+        if (isNaN(ENGLISHmarks) || ENGLISHmarks < 0 || ENGLISHmarks > 100) {
+            alert("Enter valid number between 0 to 100");
+            ENGLISHmarks = prompt("Enter your English Marks");
+            ENGLISHmarks = Number(ENGLISHmarks);
+        }
+    }
+}
+
+// SST Marks Validation
+var SSTmarks = prompt("Enter your SST Marks");
+SSTmarks = Number(SSTmarks);
+if (isNaN(SSTmarks) || SSTmarks < 0 || SSTmarks > 100) {
+    alert("Enter valid number between 0 to 100");
+    SSTmarks = prompt("Enter your SST Marks");
+    SSTmarks = Number(SSTmarks);
+    if (isNaN(SSTmarks) || SSTmarks < 0 || SSTmarks > 100) {
+        alert("Enter valid number between 0 to 100");
+        SSTmarks = prompt("Enter your SST Marks");
+        SSTmarks = Number(SSTmarks);
+        if (isNaN(SSTmarks) || SSTmarks < 0 || SSTmarks > 100) {
+            alert("Enter valid number between 0 to 100");
+            SSTmarks = prompt("Enter your SST Marks");
+            SSTmarks = Number(SSTmarks);
+        }
+    }
+}
+
+// Math Marks Validation
+var mathmarks = prompt("Enter your Math Marks");
+mathmarks = Number(mathmarks);
+if (isNaN(mathmarks) || mathmarks < 0 || mathmarks > 100) {
+    alert("Enter valid number between 0 to 100");
+    mathmarks = prompt("Enter your Math Marks");
+    mathmarks = Number(mathmarks);
+    if (isNaN(mathmarks) || mathmarks < 0 || mathmarks > 100) {
+        alert("Enter valid number between 0 to 100");
+        mathmarks = prompt("Enter your Math Marks");
+        mathmarks = Number(mathmarks);
+        if (isNaN(mathmarks) || mathmarks < 0 || mathmarks > 100) {
+            alert("Enter valid number between 0 to 100");
+            mathmarks = prompt("Enter your Math Marks");
+            mathmarks = Number(mathmarks);
+        }
+    }
+}
+
+// Science Marks Validation
+var scincemarks = prompt("Enter your Science Marks");
+scincemarks = Number(scincemarks);
+if (isNaN(scincemarks) || scincemarks < 0 || scincemarks > 100) {
+    alert("Enter valid number between 0 to 100");
+    scincemarks = prompt("Enter your Science Marks");
+    scincemarks = Number(scincemarks);
+    if (isNaN(scincemarks) || scincemarks < 0 || scincemarks > 100) {
+        alert("Enter valid number between 0 to 100");
+        scincemarks = prompt("Enter your Science Marks");
+        scincemarks = Number(scincemarks);
+        if (isNaN(scincemarks) || scincemarks < 0 || scincemarks > 100) {
+            alert("Enter valid number between 0 to 100");
+            scincemarks = prompt("Enter your Science Marks");
+            scincemarks = Number(scincemarks);
+        }
+    }
+}
+
+// Calculate Total Marks
+var totalmarks = urdumarks + ENGLISHmarks + SSTmarks + mathmarks + scincemarks;
+
+// Calculate Percentage
+var percentage = (totalmarks / 500) * 100;
+
+// Calculate Grade
+var grade;
+if (percentage >= 90) {
+    grade = "A+";
+} else if (percentage >= 80) {
+    grade = "A";
+} else if (percentage >= 70) {
+    grade = "B";
+} else if (percentage >= 60) {
+    grade = "C";
+} else if (percentage >= 50) {
+    grade = "D";
+} else {
+    grade = "F";
+}
+
+// Display Results
+alert("Your total marks are: " + totalmarks);
+alert("Your percentage is: " + percentage + "%");
+alert("Your grade is: " + grade);
+
+
+    </script>
+</body>
+</html>
